@@ -36,8 +36,7 @@ def ask_question(question: str):
 
 if __name__ == "__main__":
     print("Smart Q&A Assistant Started")
-    print("Type 'exit' to quit
-")
+    print("Type 'exit' to quit")
 
     while True:
         user_question = input("Ask Question: ")
@@ -48,13 +47,9 @@ if __name__ == "__main__":
         try:
             answer = ask_question(user_question)
 
-            print("
-AI Response:
-")
+            print("AI Response:")
             print(answer)
-            print("
-" + "=" * 80 + "
-")
+            print("-" * 50)
 
         except Exception as e:
             print(f"Error: {e}")
